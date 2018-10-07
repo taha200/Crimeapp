@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+}
+.crd{
+  border: 2px grey outset;
+  border-radius: 12px;
+  padding: 5px;
+
+}
+.crdimg{
+  width: 250px;
+  margin-left: 8%;
+  max-height: 200px;
+  height: 150px;
+}
+    .btn-xlarge {
+      padding: 18px 28px;
+      font-size: 22px;
+      line-height: normal;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+       align-self: center;
+      }
