@@ -1,10 +1,16 @@
 import { 
     login,
-    logout
+    logout,
+    insertCrime,
+    insertComplain,
+    insertMissPerson
 } from "../actions/actionNames";
 const initialState = {
     isLoggedIn:false,
     userName:'',
+    crimes:[],
+    complains:[],
+    missingPersons:[]
 }
 
 export default (state = initialState,action)=>{
@@ -22,6 +28,22 @@ export default (state = initialState,action)=>{
             isLoggedIn:false,
             userName:''
         }
+        case insertCrime:
+        return{
+            ...state,
+            crimes:[...state.crimes,action.payload]
+        }
+        case insertComplain:
+        return{
+            ...state,
+            complains:[...state.complains,action.payload]
+        }
+        case insertMissPerson:
+        return{
+ ...state,
+ missingPersons:[...state.missingPersons,action.payload]
+        }
+       
         default:
         return state
     }
